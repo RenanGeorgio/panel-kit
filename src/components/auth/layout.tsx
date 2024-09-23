@@ -57,7 +57,7 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
             <Box
               component="img"
               alt="Widgets"
-              src="/assets/auth-diamondbigger.png"
+              src="/assets/auth-diamondbigger-white.png"
               sx={{ height: 'auto', width: '100%', maxWidth: '600px' }}
             />
           </Box>
