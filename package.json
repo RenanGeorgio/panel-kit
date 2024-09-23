@@ -1,8 +1,8 @@
 {
-  "name": "material-kit-react",
+  "name": "diamondbigger-panel-plataform",
   "version": "4.0.0",
   "author": "RenanGeorgio",
-  "homepage": "https://devias.io",
+  "homepage": "https://diamondbigger-panel-plataform.vercel.app",
   "private": false,
   "scripts": {
     "dev": "next dev",
