@@ -19,12 +19,13 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
         flexDirection: 'column',
         gridTemplateColumns: '1fr 1fr',
         minHeight: '100%',
+        backgroundColor: '#f0f0f080'
       }}
     >
       <Box sx={{ display: 'flex', flex: '1 1 auto', flexDirection: 'column' }}>
         <Box sx={{ p: 3 }}>
           <Box component={RouterLink} href={paths.home} sx={{ display: 'inline-block', fontSize: 0 }}>
-            <DynamicLogo colorDark="light" colorLight="dark" height={32} width={122} />
+            <DynamicLogo colorDark="light" colorLight="dark" height={55} width={150} />
           </Box>
         </Box>
         <Box sx={{ alignItems: 'center', display: 'flex', flex: '1 1 auto', justifyContent: 'center', p: 3 }}>
@@ -34,8 +35,8 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
       <Box
         sx={{
           alignItems: 'center',
-          background: 'radial-gradient(50% 50% at 50% 50%, #122647 0%, #090E23 100%)',
-          color: 'var(--mui-palette-common-white)',
+          background: 'white', 
+          color: 'black', 
           display: { xs: 'none', lg: 'flex' },
           justifyContent: 'center',
           p: 3,
@@ -43,14 +44,18 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
       >
         <Stack spacing={3}>
           <Stack spacing={1}>
-            <Typography color="inherit" sx={{ fontSize: '24px', lineHeight: '32px', textAlign: 'center' }} variant="h1">
+            <Typography
+              color="inherit"
+              sx={{ fontSize: '24px', lineHeight: '32px', textAlign: 'center', color: 'black' }}
+              variant="h1"
+            >
               Welcome to{' '}
               <Box component="span" sx={{ color: '#15b79e' }}>
                 Diamondbigger Plataform User
               </Box>
             </Typography>
-            <Typography align="center" variant="subtitle1">
-              A professional plataform ready-to-use.
+            <Typography align="center" variant="subtitle1" sx={{ color: 'black' }}>
+              A professional template that comes with ready-to-use MUI components.
             </Typography>
           </Stack>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
